@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="generator" content="Hugo 0.139.2">
+<meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content="Shadocs theme homepage" /><title>Shadocs theme documentation</title>
+
+<link
+  rel="icon"
+  href="/images/favicon.png"
+  type="image/x-icon"
+/>
+<link
+    rel="stylesheet"
+    rel="preload"
+    type="text/css"
+    href="/css/main.css"
+  /><link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/external/fontawesome.all.min.css"
+    /><link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/external/overlay-scrollbars/overlayscrollbars.min.css"
+    /><link
+      rel="stylesheet"
+      type="text/css"
+      href="/css/shortcuts.min.css"
+    />
+</head>
+  <body onload="browserCompatibility()"><div id="navbarInfo" class="is-hidden modal-container">
+  <div class="modal-content-box modal-text-box">
+    <div class="card modal-title is-radiusless">
+      <div class="card-header">
+        <p class="card-header-title is-marginless"></p>
+      </div>
+    </div>
+    <div class="modal-content-container">
+      <div class="modal-content-block is-block"><div class="columns is-marginless is-multiline is-centered">
+  <div class="column">
+    <a
+      class="is-itext-link"
+      href="https://github.com/jgazeau/shadocs"
+      target="_blank"
+    >
+      <div>
+        <i class="fa-brands fa-github fa-2x"></i>
+        <p></p>
+      </div>
+    </a>
+  </div>
+  <div class="column">
+    <a
+      class="is-itext-link"
+      href="https://github.com/jgazeau/shadocs/archive/main.zip"
+      target="_blank"
+    >
+      <div>
+        <i class="fa-solid fa-download fa-2x"></i>
+        <p></p>
+      </div>
+    </a>
+  </div>
+  <div class="column">
+    <a
+      class="is-itext-link"
+      href="https://github.com/jgazeau/shadocs/issues"
+      target="_blank"
+    >
+      <div>
+        <i class="fa-solid fa-circle-info fa-2x"></i>
+        <p></p>
+      </div>
+    </a>
+  </div>
+  <div class="column">
+    <a
+      class="is-itext-link"
+      href="https://github.com/jgazeau/shadocs/fork"
+      target="_blank"
+    >
+      <div>
+        <i class="fa-solid fa-code-branch fa-2x"></i>
+        <p></p>
+      </div>
+    </a>
+  </div>
+</div>
+<p>(0.139.2)</p>
+<p>Copyright © 2024 EuskadiTech™</p>
+</div>
+    </div>
+  </div>
+</div>
+<div id="navbarShortcuts" class="is-hidden modal-container">
+  <div class="modal-content-box modal-text-box"><div class="card modal-title is-radiusless">
+        <div class="card-header">
+          <p class="card-header-title is-marginless"></p>
+        </div>
+      </div>
+      <div class="modal-content-container">
+        <div class="modal-content-block"><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>q</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">10_qrcode</p>
+  </div><div class="modal-content"><kbd>Escape</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">11_closemodals</p>
+  </div><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>i</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">1_info</p>
+  </div><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>k</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">2_shortcuts</p>
+  </div><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>h</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">3_home</p>
+  </div><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>f</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">4_search</p>
+  </div><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>m</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">5_togglesidebar</p>
+  </div><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>t</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">6_toggletoc</p>
+  </div><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>ArrowUp</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">7_backtotop</p>
+  </div><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>ArrowDown</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">8_gotobottom</p>
+  </div><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>p</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">9_print</p>
+  </div><div class="modal-content"><kbd>Shift</kbd><p>+</p><kbd>1</kbd></div>
+  <div class="modal-content">
+    <p class="has-text-weight-normal">example</p>
+  </div></div>
+      </div></div>
+</div>
+<div id="modalContainer" class="is-hidden modal-container">
+  <div id="modal" class="modal-content-box"></div>
+</div>
+<nav id="navbar" class="navbar" role="navigation" aria-label="main navigation">
+  <div id="navbarItemsContainer" class="navbar-brand"><div id="globalLogoContainer" class="is-flex">
+  <a
+    id="globalLogo"
+    class="navbar-item navbar-item-standard is-paddingless"
+    href="/"
+  >
+    <img
+      alt=""
+      src="/images/logo.png"
+    />
+  </a>
+  <a
+    id="globalTouchLogo"
+    class="navbar-item navbar-item-standard is-paddingless"
+    href="/"
+  >
+    <img
+      alt=""
+      src="/images/logoTouch.png"
+    />
+  </a>
+</div>
+<div id="navbarItems" class="is-flex">
+      <div id="navbarItemsStart" class="is-flex">
+        <div id="searchContainer" class="navbar-item"><div class="control has-icons-left">
+  <span id="searchInput" class="autocomplete">
+    <input
+      id="search"
+      autocomplete="off"
+      class="input"
+      type="search"
+      placeholder=""
+    />
+  </span>
+  <span class="icon is-left">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </span>
+  <ul id="searchList" class="is-paddingless is-hidden"></ul>
+</div>
+</div>
+      </div>
+      <div id="navbarItemsEnd" class="is-flex is-invisible"><div class="navbar-item">
+  <a
+    id="printButton"
+    class="button navbar-item-standard"
+  >
+    <span class="icon-text"></span>
+    <span class="icon">
+      <i class="fa-solid fa-print fa-lg"></i>
+    </span>
+  </a>
+</div>
+<div class="navbar-item">
+  <a
+    id="qrCodeButton"
+    class="button navbar-item-standard"
+  >
+    <span class="icon-text"></span>
+    <span class="icon">
+      <i class="fa-solid fa-qrcode fa-lg"></i>
+    </span>
+  </a>
+</div>
+<div class="navbar-item">
+  <a
+    id="shortcutsInfo"
+    trigger="navbarShortcuts"
+    class="button navbar-item-standard navbar-trigger"
+    title=""
+  >
+    <span class="icon-text"></span>
+    <span class="icon">
+      <i class="fa-solid fa-keyboard fa-lg"></i>
+    </span>
+  </a>
+</div><div class="navbar-item"><div
+  id="taxonomiesSelectorContainer"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="taxonomiesSelector"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text"></span>
+      <span class="icon">
+        <i class="fa-solid fa-tags fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-taxonomies"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content is-paddingless"><a
+              href="/categories/"
+              class="dropdown-item has-text-weight-bold"
+            ><i class="fa-solid fa-table-cells"></i>Categories</a></div>
+  </div>
+</div>
+</div><div class="navbar-item"><div
+  id="langsSelectorContainer"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="langsSelector"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text">Español</span>
+      <span class="icon">
+        <i class="fa-solid fa-globe fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-langs"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content is-paddingless"><div class="dropdown-item is-selected has-text-weight-bold">Español</div><a
+            href="/en/"
+            class="dropdown-item has-text-weight-bold"
+          >English</a></div>
+  </div>
+</div>
+</div><div class="navbar-item"><div
+  id="versionsSelectorContainer"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="versionsSelector"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text"></span>
+      <span class="icon">
+        <i class="fa-solid fa-arrow-down-9-1 fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-versions"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content is-paddingless"><a
+          href="https://jgazeau.github.io/shadocs/"
+          class="dropdown-item has-text-weight-bold"
+        >latest</a><a
+          href="https://jgazeau.github.io/shadocs/404.html"
+          class="dropdown-item has-text-weight-bold"
+        >deprecated version</a></div>
+  </div>
+</div>
+</div><div class="navbar-item">
+  <a
+    id="siteInfo"
+    trigger="navbarInfo"
+    class="button navbar-item-standard navbar-trigger"
+    title=""
+  >
+    <span class="icon-text"></span>
+    <span class="icon">
+      <i class="fa-solid fa-circle-question fa-lg"></i>
+    </span>
+  </a>
+</div>
+<div id="navbarExtend" class="navbar-item">
+  <div id="navbarExtendWrapper">
+    <a id="navbarExtendButton" class="button navbar-item-standard">
+      <span class="icon">
+        <i class="fa-solid fa-ellipsis fa-lg"></i>
+      </span>
+    </a>
+    <div id="navbarExtendItemsContainer">
+      <div id="navbarExtendItemsWrapper"><div class="navbar-item">
+  <a
+    id="printButtonExtend"
+    class="button navbar-item-standard"
+  >
+    <span class="icon-text"></span>
+    <span class="icon">
+      <i class="fa-solid fa-print fa-lg"></i>
+    </span>
+  </a>
+</div>
+<div class="navbar-item">
+  <a
+    id="qrCodeButtonExtend"
+    class="button navbar-item-standard"
+  >
+    <span class="icon-text"></span>
+    <span class="icon">
+      <i class="fa-solid fa-qrcode fa-lg"></i>
+    </span>
+  </a>
+</div>
+<div class="navbar-item">
+  <a
+    id="shortcutsInfoExtend"
+    trigger="navbarShortcuts"
+    class="button navbar-item-standard navbar-trigger"
+    title=""
+  >
+    <span class="icon-text"></span>
+    <span class="icon">
+      <i class="fa-solid fa-keyboard fa-lg"></i>
+    </span>
+  </a>
+</div><div class="navbar-item"><div
+  id="taxonomiesSelectorContainerExtend"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="taxonomiesSelectorExtend"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text"></span>
+      <span class="icon">
+        <i class="fa-solid fa-tags fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-taxonomiesExtend"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content is-paddingless"><a
+              href="/categories/"
+              class="dropdown-item has-text-weight-bold"
+            ><i class="fa-solid fa-table-cells"></i>Categories</a></div>
+  </div>
+</div>
+</div><div class="navbar-item"><div
+  id="langsSelectorContainerExtend"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="langsSelectorExtend"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text">Español</span>
+      <span class="icon">
+        <i class="fa-solid fa-globe fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-langsExtend"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content is-paddingless"><div class="dropdown-item is-selected has-text-weight-bold">Español</div><a
+            href="/en/"
+            class="dropdown-item has-text-weight-bold"
+          >English</a></div>
+  </div>
+</div>
+</div><div class="navbar-item"><div
+  id="versionsSelectorContainerExtend"
+  class="dropdown is-right"
+>
+  <div class="dropdown-trigger">
+    <button
+      id="versionsSelectorExtend"
+      class="button navbar-item-standard"
+      aria-haspopup="true"
+      aria-controls="dropdown-menu"
+    >
+      <span class="icon-text"></span>
+      <span class="icon">
+        <i class="fa-solid fa-arrow-down-9-1 fa-lg"></i>
+      </span>
+    </button>
+  </div>
+  <div
+    id="dropdown-menu-versionsExtend"
+    class="dropdown-menu"
+    role="menu"
+  >
+    <div class="dropdown-content is-paddingless"><a
+          href="https://jgazeau.github.io/shadocs/"
+          class="dropdown-item has-text-weight-bold"
+        >latest</a><a
+          href="https://jgazeau.github.io/shadocs/404.html"
+          class="dropdown-item has-text-weight-bold"
+        >deprecated version</a></div>
+  </div>
+</div>
+</div><div class="navbar-item">
+  <a
+    id="siteInfoExtend"
+    trigger="navbarInfo"
+    class="button navbar-item-standard navbar-trigger"
+    title=""
+  >
+    <span class="icon-text"></span>
+    <span class="icon">
+      <i class="fa-solid fa-circle-question fa-lg"></i>
+    </span>
+  </a>
+</div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+</nav>
+<div id="navbarOverlay"></div>
+<div
+      class="columns is-mobile is-paddingless is-marginless"
+      id="mainContainer"
+    ><div
+  id="sidebarContainer"
+  class="column is-narrow is-paddingless is-marginless"
+>
+  <div id="sidebarWrapper" class="is-fixed">
+    <div id="sidebar" class="is-marginless">
+      <aside class="menu is-paddingless is-marginless">
+        <ul class="menu-list is-marginless is-paddingless"></ul>
+      </aside>
+    </div>
+    <div id="sidebarCollapsible" class="is-marginless">
+      <div class="card is-uncollapse-action">
+        <div
+          id="sidebarUncollapse"
+          class="card-header is-single-link"
+          title=""
+        >
+          <a class="card-header-title">
+            <i class="fa-solid fa-angles-right fa-lg"></i>
+          </a>
+        </div>
+      </div>
+      <div class="card is-collapse-action">
+        <div
+          id="sidebarCollapse"
+          class="card-header is-single-link"
+          title=""
+        >
+          <a class="card-header-title">
+            <i class="fa-solid fa-angles-left fa-lg"></i>
+            <p></p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="sidebarMobileWrapper" class="column is-narrow is-hidden-desktop"></div>
+<div class="columns is-mobile is-marginless is-scroll-smooth" id="contentContainer">
+  <div class="column" id="contentHome"><div id="contentHomeTitle">Shadocs theme documentation</div>
+<div
+      id="intro-error-title"
+      data-intro=""
+      class="is-hidden"
+    ></div>
+    <div
+      id="intro-error"
+      data-intro=""
+      class="is-hidden"
+    ></div>
+    <div
+      id="intro-empty"
+      data-intro=""
+      class="is-hidden"
+    ></div><div
+    class="sc-intro"
+    id="introHome"
+    data-intro="DQp7DQogICJvbmV4aXQiOiAibWFuYWdlRGVmYXVsdENvbGxhcHNpYmxlU2lkZWJhcigpO3RvZ2dsZUV4dGVuZE1lbnUoZmFsc2UpOyIsDQogICJvbmNvbXBsZXRlIjogIndpbmRvdy5sb2NhdGlvbi5ocmVmID0gJy4vdGhlbWUnOyIsDQogICJzdGVwcyI6IFsNCiAgICB7DQogICAgICAidGl0bGUiOiAiU2hhZG9jcyB0aGVtZSIsDQogICAgICAiaW50cm8iOiAiV2VsY29tZSBvbiB0aGUgU2hhZG9jcyB0aGVtZSBkb2N1bWVudGF0aW9uIHdlYnNpdGUuPGJyPlRocm91Z2ggdGhpcyBzdGVwIGJ5IHN0ZXAgb25ib2FyZGluZyBndWlkZSwgeW91IHdpbGwgZGlzY292ZXIgdGhlIHNldmVyYWwgd2Vic2l0ZSBmZWF0dXJlcyBhbmQgdGhlcmVmb3JlIHRoZSB0aGVtZSBvbmVzLiIsDQogICAgICAib25iZWZvcmVjaGFuZ2UiOiAidG9nZ2xlU2lkZWJhcihmYWxzZSx0cnVlKTt0b2dnbGVFeHRlbmRNZW51KGZhbHNlKTsiDQogICAgfSx7DQogICAgICAidGl0bGUiOiAiVGhlIGxvZ28iLA0KICAgICAgImludHJvIjogIlRoZSB3ZWJzaXRlIGxvZ28gYWxsb3dzIHRvIGdvIGJhY2sgdG8gdGhlIGhvbWVwYWdlLiIsDQogICAgICAiZWxlbWVudCI6ICIjZ2xvYmFsTG9nbyIsDQogICAgICAicG9zaXRpb24iOiAicmlnaHQiLA0KICAgICAgIm9uYmVmb3JlY2hhbmdlIjogInRvZ2dsZVNpZGViYXIoZmFsc2UsdHJ1ZSk7dG9nZ2xlRXh0ZW5kTWVudShmYWxzZSk7Ig0KICAgIH0sew0KICAgICAgInRpdGxlIjogIlRoZSBuYXZpZ2F0aW9uIGJhciIsDQogICAgICAiaW50cm8iOiAiVGhlIGhvcml6b250YWwgYmFyIGxvY2F0ZWQgYXQgdGhlIHRvcCBvZiB0aGUgc2NyZWVuLCBhbHNvIGNhbGxlZCBhcyB0aGUgbmF2aWdhdGlvbiBiYXIsIGNvbnRhaW5zIHNldmVyYWwgZmVhdHVyZXMgdG8gZWFzZSBuYXZpZ2F0aW9uIGFuZCB1c2VyIGV4cGVyaWVuY2Ugb24gdGhlIHdlYnNpdGUuIERlcGVuZGluZyBvbiB0aGUgd2luZG93IHdpZHRoIGFuIGV4dGVuZCBtZW51IHdpbGwgYXBwZWFyIGFsbG93aW5nIHRvIGRpc3BsYXkgaGlkZGVuIG5hdmlnYXRpb24gYmFyIGJ1dHRvbnMuIiwNCiAgICAgICJlbGVtZW50IjogIiNuYXZiYXIiLA0KICAgICAgIm9uYmVmb3JlY2hhbmdlIjogInRvZ2dsZVNpZGViYXIoZmFsc2UsdHJ1ZSk7dG9nZ2xlRXh0ZW5kTWVudShmYWxzZSk7Ig0KICAgIH0sew0KICAgICAgInRpdGxlIjogIlNlYXJjaCIsDQogICAgICAiaW50cm8iOiAiVGhlIHNlYXJjaCBmdW5jdGlvbiBhbGxvd3MgdG8gc2VhcmNoIGZvciBjb250ZW50IGFjcm9zcyB0aGUgd2hvbGUgd2Vic2l0ZS48YnI&#43;PGk&#43;TkI6IEFkdmFuY2VkIHNlYXJjaCB1c2luZyByZWd1bGFyIGV4cHJlc3Npb25zIG5vdCBhdmFpbGFibGUuPC9pPiIsDQogICAgICAiZWxlbWVudCI6ICIjc2VhcmNoIiwNCiAgICAgICJwb3NpdGlvbiI6ICJsZWZ0IiwNCiAgICAgICJvbmJlZm9yZWNoYW5nZSI6ICJ0b2dnbGVTaWRlYmFyKGZhbHNlLHRydWUpO3RvZ2dsZUV4dGVuZE1lbnUoZmFsc2UpOyINCiAgICB9LHsNCiAgICAgICJ0aXRsZSI6ICJQcmludCIsDQogICAgICAiaW50cm8iOiAiVGhlIHByaW50IGZ1bmN0aW9uIGFsbG93cyB0byBwcmludCB0aGUgY3VycmVudCBwYWdlIGNvbnRlbnQuIiwNCiAgICAgICJlbGVtZW50IjogImdldEZpcnN0VmlzaWJsZUVsZW1lbnQoJyNwcmludEJ1dHRvbiwgI3ByaW50QnV0dG9uRXh0ZW5kJyk7IiwNCiAgICAgICJwb3NpdGlvbiI6ICJsZWZ0IiwNCiAgICAgICJvbmJlZm9yZWNoYW5nZSI6ICJ0b2dnbGVTaWRlYmFyKGZhbHNlLHRydWUpO3RvZ2dsZUV4dGVuZE1lbnUodHJ1ZSk7Ig0KICAgIH0sew0KICAgICAgInRpdGxlIjogIlFSIGNvZGUiLA0KICAgICAgImludHJvIjogIlRoZSBRUiBjb2RlIGZ1bmN0aW9uIGFsbG93cyB0byBkaXNwbGF5IHRoZSBRUiBjb2RlIGFzc29jaWF0ZWQgdG8gdGhlIGN1cnJlbnQgcGFnZSBVUkwuIiwNCiAgICAgICJlbGVtZW50IjogImdldEZpcnN0VmlzaWJsZUVsZW1lbnQoJyNxckNvZGVCdXR0b24sICNxckNvZGVCdXR0b25FeHRlbmQnKTsiLA0KICAgICAgInBvc2l0aW9uIjogImxlZnQiLA0KICAgICAgIm9uYmVmb3JlY2hhbmdlIjogInRvZ2dsZVNpZGViYXIoZmFsc2UsdHJ1ZSk7dG9nZ2xlRXh0ZW5kTWVudSh0cnVlKTsiDQogICAgfSx7DQogICAgICAidGl0bGUiOiAiU2hvcnRjdXRzIiwNCiAgICAgICJpbnRybyI6ICJUaGUgc2hvcnRjdXRzIGJ1dHRvbiBwcm92aWRlcyBhY2Nlc3MgdG8gdGhlIGxpc3Qgb2YgdGhlIHNob3J0Y3V0cyBhdmFpbGFibGUgb24gdGhlIHdlYnNpdGUuIiwNCiAgICAgICJlbGVtZW50IjogImdldEZpcnN0VmlzaWJsZUVsZW1lbnQoJyNzaG9ydGN1dHNJbmZvLCAjc2hvcnRjdXRzSW5mb0V4dGVuZCcpOyIsDQogICAgICAicG9zaXRpb24iOiAibGVmdCIsDQogICAgICAidHJpZ2dlcmV4Y2VwdCI6IFsibm9ob3ZlciJdLA0KICAgICAgIm9uYmVmb3JlY2hhbmdlIjogInRvZ2dsZVNpZGViYXIoZmFsc2UsdHJ1ZSk7dG9nZ2xlRXh0ZW5kTWVudSh0cnVlKTsiDQogICAgfSx7DQogICAgICAidGl0bGUiOiAiVGF4b25vbWllcyIsDQogICAgICAiaW50cm8iOiAiVGhlIHRheG9ub21pZXMgYnV0dG9uIHByb3ZpZGVzIGFjY2VzcyB0byB0aGUgc2V2ZXJhbCB0YXhvbm9taWVzIG9mIHRoZSB3ZWJzaXRlLjxicj48aT5OQjogVGhpcyBidXR0b24gaXMgb25seSB2aXNpYmxlIGlmIGF0IGxlYXN0IG9uZSB0YXhvbm9teSBleGlzdHMuPC9pPiIsDQogICAgICAiZWxlbWVudCI6ICJnZXRGaXJzdFZpc2libGVFbGVtZW50KCcjdGF4b25vbWllc1NlbGVjdG9yLCAjdGF4b25vbWllc1NlbGVjdG9yRXh0ZW5kJyk7IiwNCiAgICAgICJwb3NpdGlvbiI6ICJsZWZ0IiwNCiAgICAgICJvbmJlZm9yZWNoYW5nZSI6ICJ0b2dnbGVTaWRlYmFyKGZhbHNlLHRydWUpO3RvZ2dsZUV4dGVuZE1lbnUodHJ1ZSk7Ig0KICAgIH0sew0KICAgICAgInRpdGxlIjogIk11bHRpbGluZ3VhbCIsDQogICAgICAiaW50cm8iOiAiVGhlIG11bHRpbGluZ3VhbCBidXR0b24gcHJvdmlkZXMgYWNjZXNzIHRvIHRoZSBzZXZlcmFsIHRyYW5zbGF0aW9ucyBvZiB0aGUgY3VycmVudCBwYWdlLjxicj48aT5OQjogVGhpcyBidXR0b24gaXMgb25seSB2aXNpYmxlIGlmIGEgdHJhbnNsYXRpb24gcGFnZSBleGlzdHMgZm9yIHRoZSBjdXJyZW50IHBhZ2UuPC9pPiIsDQogICAgICAiZWxlbWVudCI6ICJnZXRGaXJzdFZpc2libGVFbGVtZW50KCcjbGFuZ3NTZWxlY3RvciwgI2xhbmdzU2VsZWN0b3JFeHRlbmQnKTsiLA0KICAgICAgInBvc2l0aW9uIjogImxlZnQiLA0KICAgICAgIm9uYmVmb3JlY2hhbmdlIjogInRvZ2dsZVNpZGViYXIoZmFsc2UsdHJ1ZSk7dG9nZ2xlRXh0ZW5kTWVudSh0cnVlKTsiDQogICAgfSx7DQogICAgICAidGl0bGUiOiAiVmVyc2lvbmluZyIsDQogICAgICAiaW50cm8iOiAiVGhlIHZlcnNpb25pbmcgYnV0dG9uIHByb3ZpZGVzIG90aGVyIGF2YWlsYWJsZSB2ZXJzaW9ucyBvZiB0aGUgd2Vic2l0ZS4iLA0KICAgICAgImVsZW1lbnQiOiAiZ2V0Rmlyc3RWaXNpYmxlRWxlbWVudCgnI3ZlcnNpb25zU2VsZWN0b3IsICN2ZXJzaW9uc1NlbGVjdG9yRXh0ZW5kJyk7IiwNCiAgICAgICJwb3NpdGlvbiI6ICJsZWZ0IiwNCiAgICAgICJvbmJlZm9yZWNoYW5nZSI6ICJ0b2dnbGVTaWRlYmFyKGZhbHNlLHRydWUpO3RvZ2dsZUV4dGVuZE1lbnUodHJ1ZSk7Ig0KICAgIH0sew0KICAgICAgInRpdGxlIjogIkFib3V0IHRoZSB3ZWJzaXRlIiwNCiAgICAgICJpbnRybyI6ICJUaGUgaW5mb3JtYXRpb24gYnV0dG9uIHByb3ZpZGVzIGdlbmVyYWwgaW5mb3JtYXRpb24gYWJvdXQgdGhlIHdlYnNpdGUuIiwNCiAgICAgICJlbGVtZW50IjogImdldEZpcnN0VmlzaWJsZUVsZW1lbnQoJyNzaXRlSW5mbywgI3NpdGVJbmZvRXh0ZW5kJyk7IiwNCiAgICAgICJwb3NpdGlvbiI6ICJsZWZ0IiwNCiAgICAgICJvbmJlZm9yZWNoYW5nZSI6ICJ0b2dnbGVTaWRlYmFyKGZhbHNlLHRydWUpO3RvZ2dsZUV4dGVuZE1lbnUodHJ1ZSk7Ig0KICAgIH0sew0KICAgICAgInRpdGxlIjogIlNpZGViYXIiLA0KICAgICAgImludHJvIjogIlRoZSBzaWRlYmFyIG9uIHRoZSBsZWZ0IG9mIHRoZSBzY3JlZW4gYWxsb3dzIHRvIG5hdmlnYXRlIHRocm91Z2ggYWxsIHRoZSBwYWdlcyBvZiB0aGUgd2Vic2l0ZS4iLA0KICAgICAgImVsZW1lbnQiOiAiI3NpZGViYXJXcmFwcGVyIiwNCiAgICAgICJvbmJlZm9yZWNoYW5nZSI6ICJ0b2dnbGVTaWRlYmFyKHRydWUsdHJ1ZSk7dG9nZ2xlRXh0ZW5kTWVudShmYWxzZSk7Ig0KICAgIH0sew0KICAgICAgInRpdGxlIjogIlNpZGViYXIiLA0KICAgICAgImludHJvIjogIkl0IGlzIHBvc3NpYmxlIHRvIGNvbGxhcHNlIHRoZSBzaWRlYmFyIHRvIGRpc3BsYXkgbWFpbiBzZWN0aW9ucyBpY29ucyBvbmx5LiIsDQogICAgICAiZWxlbWVudCI6ICIjc2lkZWJhckNvbGxhcHNlIiwNCiAgICAgICJvbmJlZm9yZWNoYW5nZSI6ICJ0b2dnbGVTaWRlYmFyKHRydWUsdHJ1ZSk7dG9nZ2xlRXh0ZW5kTWVudShmYWxzZSk7Ig0KICAgIH0sew0KICAgICAgInRpdGxlIjogIlNpZGViYXIiLA0KICAgICAgImludHJvIjogIldoZW4gdGhlIHNpZGViYXIgaXMgY29sbGFwc2VkLCBob3ZlciBvdmVyIGEgc2VjdGlvbiB0byBkaXNwbGF5IHRoZSBhc3NvY2lhdGVkIHN1Yi1tZW51cyAob3IgY2xpY2sgb24gdG91Y2ggZGV2aWNlcykuPGJyPjxpPk5COiBXaGVuIHRoZSB3aW5kb3cgaXMgbGVzcyB0aGFuIDEwMjQgcGl4ZWxzIHdpZGUsIHRoZSBzaWRlYmFyIGlzIGNvbGxhcHNlZCBieSBkZWZhdWx0LjwvaT4iLA0KICAgICAgImVsZW1lbnQiOiAiI3NpZGViYXJVbmNvbGxhcHNlIiwNCiAgICAgICJvbmJlZm9yZWNoYW5nZSI6ICJ0b2dnbGVTaWRlYmFyKGZhbHNlLHRydWUpO3RvZ2dsZUV4dGVuZE1lbnUoZmFsc2UpOyINCiAgICB9LHsNCiAgICAgICJ0aXRsZSI6ICJTaGFkb2NzIHRoZW1lIiwNCiAgICAgICJpbnRybyI6ICJDb25ncmF0dWxhdGlvbnMgISE8YnI&#43;WW91IGNhbiBub3cgYnJvd3NlIHRoZSB3ZWJzaXRlIHRvIGxlYXJuIG1vcmUgYWJvdXQgdGhlIHRoZW1lLjxicj48aT5DbGljayBvbiBEb25lIHRvIGNvbnRpbnVlIHRoZSBvbmJvYXJkaW5nLjwvaT4iLA0KICAgICAgIm9uYmVmb3JlY2hhbmdlIjogIm1hbmFnZURlZmF1bHRDb2xsYXBzaWJsZVNpZGViYXIoKTt0b2dnbGVFeHRlbmRNZW51KGZhbHNlKTsiDQogICAgfQ0KICBdDQp9DQo="
+  >Theme onboarding</div>
+</div></div>
+</div><script type='text/javascript'>
+  const baseUrl = new URL('', 'http:\/\/localhost:1313\/').href;
+  const codeCopyBefore = '';
+  const codeCopyAfter = '';
+  const svgDownloadLabel = '';
+  const helperLoadingLabel = '';
+  const searchNoResults = '';
+  const introNextLabel = '';
+  const introPrevLabel = '';
+  const introSkipLabel = '';
+  const introDoneLabel = '';
+  const printLabel = '';
+  const qrCodeLabel = '';
+  const naCommonLabel = '';
+  const jsoneditorValidateError = '';
+</script>
+<script
+      type="module"
+      src="/js/theme/modules/const.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/modules/helpers.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/modules/helpersGlobal.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/init.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/navbar.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/print.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/qrcode.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/search.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/shortcuts.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/sidebar.min.js"
+    ></script><script
+      type="module"
+      src="/js/theme/toc.min.js"
+    ></script><script
+      type="module"
+      src="/js/jsoneditor.min.js"
+    ></script><script
+      type="module"
+      src="/js/shortcuts.min.js"
+    ></script><script
+      type="module"
+      src="/js/external/intro/intro.min.js"
+    ></script><script
+      type="module"
+      src="/js/shortcodes/intro.min.js"
+    ></script><script
+      type="text/javascript"
+      src="/js/theme/browserCompatibility.min.js"
+    ></script><script
+      type="text/javascript"
+      src="/js/external/flexsearch/flexsearch.bundle.min.js"
+    ></script><script
+      type="text/javascript"
+      src="/js/external/qrious/qrious.min.js"
+    ></script><script
+      type="text/javascript"
+      src="/js/external/overlay-scrollbars/overlayscrollbars.min.js"
+    ></script>
+</body>
+</html>
