@@ -1,7 +1,7 @@
 #
 # Standard configuration
 #
-baseURL                = "https://tech.eus"
+baseURL                = "http://localhost:1313/"
 copyright              = "Copyright © 2024 EuskadiTech™"
 defaultContentLanguage = "es"
 enableEmoji            = false
@@ -13,7 +13,7 @@ theme                  = "shadocs"
 # themesdir              = "../.."
 
 [params.author]
-  name = "Jordan GAZEAU"
+  name = "Naiel V"
 
 [module]
   [module.hugoVersion]
@@ -76,7 +76,7 @@ theme                  = "shadocs"
   image404                = "images/404.gif"
   favicon                 = "images/favicon.png"
   faviconmd               = "![Favicon](/images/favicon.png)"
-  homeLayout              = "onboarding"
+  # homeLayout              = "onboarding"
   siteContentOrder        = "weight"
   # toc                     = true
   # globalBanner            = true

@@ -1,11 +1,11 @@
 [{
       "id": "1",
       "rootTitleIndex": "0",
-      "rootTitle": "",
+      "rootTitle": "Homepage",
       "rootTitleIcon": "fa-solid fa-house-chimney fa-lg",
       "rootTitlePath": "/",
-      "rootTitleTitle": "",
+      "rootTitleTitle": "Homepage",
       "permalink": "/",
-      "permalinkTitle": "",
-      "title": "",
-      "content":" Theme onboarding "}]
+      "permalinkTitle": "Homepage",
+      "title": "Homepage",
+      "content":"Hola, Mundo\n"}]
