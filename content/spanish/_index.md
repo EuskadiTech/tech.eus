@@ -1,8 +1,8 @@
 ---
 weight: 0
-title: "Shadocs theme documentation"
-description: "Shadocs theme homepage"
-categories: ["Theme"]
+title: "EuskadiTech™"
+description: "EuskadiTech™"
+# categories: ["Theme"]
 ---
 
 Hola, Mundo

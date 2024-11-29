@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Menú",
+  "type": "object",
+  "properties": {
+    "menu": {
+      "type": "string",
+      "description": "Tipo de menu (Basal / No Legumbres / etc.)",
+      "minLength": 1
+    },
+    "days": {
+      "type": "array",
+      "description": "Lista de Dias y sus platos",
+      "items": {
+        "type": "object",
+        "description": "Dia",
+        "properties": {
+          "day": {
+            "type": "string",
+            "description": "Fecha en el formato AAAA-MM-DD",
+            "format": "date",
+            "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+          },
+          "p1_txt": {
+            "type": "string",
+            "description": "Primer plato: Texto",
+            "minLength": 1
+          },
+          "p1_img": {
+            "type": "string",
+            "description": "Primer plato: URL de la foto",
+            "format": "url"
+          },
+          "p2_txt": {
+            "type": "string",
+            "description": "Segundo plato: Texto",
+            "minLength": 1
+          },
+          "p2_img": {
+            "type": "string",
+            "description": "Segundo plato: URL de la foto",
+            "format": "url"
+          },
+          "p3_txt": {
+            "type": "string",
+            "description": "Tercer plato: Texto",
+            "minLength": 1
+          },
+          "p3_img": {
+            "type": "string",
+            "description": "Tercer plato: URL de la foto",
+            "format": "url"
+          },
+          "stat": {
+            "type": "boolean",
+            "description": "¿Es suficiente ración?",
+            "format": "url"
+          }
+        },
+        "required": [
+          "day",
+          "p1_txt",
+          "p2_txt",
+          "p3_txt",
+          "stat"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "menu",
+    "days"
+  ]
+}

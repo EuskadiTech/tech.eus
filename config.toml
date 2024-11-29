@@ -56,13 +56,13 @@ theme                  = "shadocs"
 [Languages]
   [Languages.es]
     contentDir   = "content/spanish"
-    title        = "Documentación EuskadiTech"
+    title        = "EuskadiTech™"
     weight       = 1
     languageName = "Español"
 
   [Languages.en]
     contentDir   = "content/english"
-    title        = "Shadocs theme documentation"
+    title        = "EuskadiTech™"
     weight       = 2
     languageName = "English"
 

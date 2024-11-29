@@ -31,75 +31,75 @@
 - id: navbarshortcuts_title
   translation: 'Atajos de teclado'
 - id: 1_info_keys_wording
-  translation: 'Shift,i'
+  translation: 'Shift+i'
 - id: 1_info_wording
-  translation: 'Show website information'
+  translation: 'Mostrar información del sitio web'
 - id: 2_shortcuts_keys_wording
-  translation: 'Shift,k'
+  translation: 'Shift+k'
 - id: 2_shortcuts_wording
-  translation: 'Show shortcuts'
+  translation: 'Mostrar Atajos'
 - id: 3_home_keys_wording
-  translation: 'Shift,h'
+  translation: 'Shift+h'
 - id: 3_home_wording
-  translation: 'Go to homepage'
+  translation: 'Ir a la pagina de inicio'
 - id: 4_search_keys_wording
-  translation: 'Shift,f'
+  translation: 'Shift+f'
 - id: 4_search_wording
-  translation: 'Find on website'
+  translation: 'Buscar'
 - id: 5_togglesidebar_keys_wording
-  translation: 'Shift,m'
+  translation: 'Shift+m'
 - id: 5_togglesidebar_wording
-  translation: 'Collapse/Uncollapse sidebar'
+  translation: 'Colapsar/Descolapsar el menú lateral'
 - id: 6_toggletoc_keys_wording
-  translation: 'Shift,t'
+  translation: 'Shift+t'
 - id: 6_toggletoc_wording
-  translation: 'Collapse/Uncollapse table of contents'
+  translation: 'Colapsar/Descolapsar la tabla de contenidos'
 - id: 7_backtotop_keys_wording
-  translation: 'Shift,↑'
+  translation: 'Shift+↑'
 - id: 7_backtotop_wording
-  translation: 'Go to the top of the page'
+  translation: 'Ir al principio de la pagina'
 - id: 8_gotobottom_keys_wording
-  translation: 'Shift,↓'
+  translation: 'Shift+↓'
 - id: 8_gotobottom_wording
-  translation: 'Go to the bottom of the page'
+  translation: 'Ir al final de la pagina'
 - id: 9_print_keys_wording
-  translation: 'Shift,p'
+  translation: 'Shift+p'
 - id: 9_print_wording
-  translation: 'Print current page'
+  translation: 'Imprimir pagina actual'
 - id: 10_qrcode_keys_wording
-  translation: 'Shift,q'
+  translation: 'Shift+q'
 - id: 10_qrcode_wording
-  translation: 'Show current page QR code'
+  translation: 'Mostrar codigo QR de la pagina actual'
 - id: 11_closemodals_keys_wording
-  translation: 'Escape'
+  translation: 'Esc'
 - id: 11_closemodals_wording
-  translation: 'Close modals'
+  translation: 'Cerrar ventanas emergentes'
 - id: shortcode_collapsible
-  translation: 'Expand/Collapse'
+  translation: 'Colapsar/Descolapsar'
 - id: no_data
-  translation: 'No data available'
+  translation: 'No hay datos disponibles'
 - id: empty_description
-  translation: 'No description available'
+  translation: 'Descripción no disponible'
 - id: read_more
-  translation: 'Read more'
+  translation: 'Leer mas'
 - id: helper_loading
-  translation: 'Loading'
+  translation: 'Cargando'
 - id: code_copy_before
-  translation: 'Copy to clipboard'
+  translation: 'Copiar'
 - id: code_copy_after
-  translation: 'Copied to clipboard'
+  translation: 'Copiado'
 - id: download_as_svg
-  translation: 'Download as SVG'
+  translation: 'Descargar como SVG'
 - id: 404_title
-  translation: "Oops, we can't find the page you're looking for."
+  translation: "Vaya, no podemos encontrar la página que estás buscando."
 - id: 404_footer
-  translation: 'Back to homepage'
+  translation: 'Volver a inicio'
 - id: intro_error_title
   translation: 'Error !!'
 - id: intro_error
-  translation: "Invalid JSON. Please check the JSON data given inside the 'intro' shortcode."
+  translation: "JSON no válido. Verifique los datos JSON que se encuentran dentro del código abreviado 'intro'"
 - id: intro_empty
-  translation: "Attribute <strong><i>steps</i></strong> not found. Please check the JSON definition given inside the 'intro' shortcode"
+  translation: "No se encontró el atributo <strong><i>steps</i></strong>. Verifique la definición JSON que se encuentra dentro del código abreviado 'intro'"
 - id: intro_prevlabel
   translation: 'Anterior'
 - id: intro_nextlabel
