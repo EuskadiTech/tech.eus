@@ -83,14 +83,14 @@ theme                  = "shadocs"
   currentVersion          = "latest"
   latestVersionUrl        = "https://jgazeau.github.io/shadocs/"
   # enforceRefrelLinks      = true
-  # navbarPrintEntry        = false
-  # navbarQRCodeEntry       = false
-  # navbarSchortcutsEntry   = false
-  # navbarInfo              = false
-  [params.navbar.shortcuts]
-    [params.navbar.shortcuts.example]
-      keys     = ["Shift","1"]
-      function = "scExample"
+  navbarPrintEntry        = false
+  navbarQRCodeEntry       = false
+  navbarSchortcutsEntry   = false
+  navbarInfo              = false
+  # [params.navbar.shortcuts]
+  #   [params.navbar.shortcuts.example]
+  #     keys     = ["Shift","1"]
+  #     function = "scExample"
   [[params.navbar.versions]]
     name = 'latest'
     url  = 'https://jgazeau.github.io/shadocs/'
