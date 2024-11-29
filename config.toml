@@ -71,17 +71,17 @@ theme                  = "shadocs"
 # Specific configuration
 #
 [params]
-  logo                    = "images/logo.png"
-  logoTouch               = "images/logoTouch.png"
+  logo                    = "assets/logos/long nobg color.svg"
+  logoTouch               = "assets/logos/nobg color.svg"
   image404                = "images/404.gif"
-  favicon                 = "images/favicon.png"
-  faviconmd               = "![Favicon](/images/favicon.png)"
+  favicon                 = "assets/logos/nobg color.svg"
+  faviconmd               = "![Favicon](/assets/logos/nobg color.svg)"
   # homeLayout              = "onboarding"
   siteContentOrder        = "weight"
   # toc                     = true
   # globalBanner            = true
   currentVersion          = "latest"
-  latestVersionUrl        = "https://jgazeau.github.io/shadocs/"
+  latestVersionUrl        = "https://tech.eus/"
   # enforceRefrelLinks      = true
   # navbarPrintEntry        = false
   # navbarQRCodeEntry       = false
@@ -93,10 +93,7 @@ theme                  = "shadocs"
   #     function = "scExample"
   [[params.navbar.versions]]
     name = 'latest'
-    url  = 'https://jgazeau.github.io/shadocs/'
-  [[params.navbar.versions]]
-    name = 'deprecated version'
-    url  = 'https://jgazeau.github.io/shadocs/404.html'
+    url  = 'https://tech.eus/'
   [params.taxonomies]
     [params.taxonomies.categories]
       icon = "fa-solid fa-table-cells"

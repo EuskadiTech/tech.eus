@@ -118,3 +118,20 @@
   translation: 'Copiar JSON'
 - id: jsoneditor_validate_error
   translation: 'Error de formulario'
+- id: navbarinfo_content
+  translation: |
+    Sitio web creado con [Hugo](https://gohugo.io/)
+- id: navbarinfo_github_main
+  translation: Repositorio de GitHub
+- id: navbarinfo_github_download
+  translation: Descargar
+- id: navbarinfo_github_issue
+  translation: Reportar un fallo
+# - id: navbarinfo_github_fork
+#   translation: Fork
+- id: example_keys_wording
+  translation: 'Shift+1'
+- id: example_wording
+  translation: 'Muestra un atajo de ejemplo'
+- id: shortcut_example
+  translation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut aliquam metus. Nam massa lectus, consequat nec est eget, faucibus suscipit nunc. Donec dapibus tortor eget libero laoreet, quis commodo orci mattis. Pellentesque in arcu et odio viverra varius vitae sit amet dolor. Mauris venenatis malesuada leo, et egestas lectus feugiat vel. Morbi pretium id turpis ac varius. Integer ut ipsum augue.'
