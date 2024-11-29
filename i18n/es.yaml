@@ -1,35 +1,35 @@
 - id: homepage_title
-  translation: 'Homepage'
+  translation: 'Inicio'
 - id: search_placeholder
-  translation: 'Search'
+  translation: 'Buscar'
 - id: search_no_results
-  translation: 'No result found'
+  translation: 'Sin resultados'
 - id: sidebar_collapse
-  translation: 'Collapse sidebar'
+  translation: 'Ocultar menú lateral'
 - id: banner_default_content
   translation: |
-    You are viewing version ***{{- .Site.Params.currentversion -}}*** of this website.
-    For an up-to-date documentation, please check the [latest version]({{- .Site.Params.latestversionurl -}}).
+    Estás viendo la versión ***{{- .Site.Params.currentversion -}}*** de este sitio web.
+    Para una versión mas reciente, por favor visita la [versión actual]({{- .Site.Params.latestversionurl -}}).
 - id: toc_title
-  translation: 'On this page:'
+  translation: 'En esta pagina:'
 - id: toc_backtotop
-  translation: 'Back to top'
+  translation: 'Volver a inicio'
 - id: navbar_label_print
-  translation: 'Print'
+  translation: 'Imprimir'
 - id: navbar_label_qrcode
-  translation: 'QR code'
+  translation: 'Codigo QR'
 - id: navbar_label_shortcuts
-  translation: 'Shortcuts'
+  translation: 'Atajos'
 - id: navbar_label_taxonomies
-  translation: 'Taxonomies'
+  translation: 'Taxonomías'
 - id: navbar_label_versions
-  translation: 'Versions'
+  translation: 'Versiones'
 - id: navbar_label_info
-  translation: 'About'
+  translation: 'Acerca de'
 - id: navbarinfo_title
-  translation: 'About'
+  translation: 'Acerca de'
 - id: navbarshortcuts_title
-  translation: 'Keyboard shortcuts'
+  translation: 'Atajos de teclado'
 - id: 1_info_keys_wording
   translation: 'Shift,i'
 - id: 1_info_wording
@@ -101,20 +101,20 @@
 - id: intro_empty
   translation: "Attribute <strong><i>steps</i></strong> not found. Please check the JSON definition given inside the 'intro' shortcode"
 - id: intro_prevlabel
-  translation: 'Previous'
+  translation: 'Anterior'
 - id: intro_nextlabel
-  translation: 'Next'
+  translation: 'Siguiente'
 - id: intro_skiplabel
   translation: '✗'
 - id: intro_donelabel
-  translation: 'Done'
+  translation: 'Hecho'
 - id: na_common
-  translation: 'Not available'
+  translation: 'No Disponible'
 - id: highcharts_error
-  translation: 'Highcharts rendering unavailable'
+  translation: 'Renderizado No Disponible'
 - id: jsoneditor_download_json
-  translation: 'Download JSON'
+  translation: 'Descargar JSON'
 - id: jsoneditor_copy_json
-  translation: 'Copy JSON to clipboard'
+  translation: 'Copiar JSON'
 - id: jsoneditor_validate_error
-  translation: 'Form error'
+  translation: 'Error de formulario'
