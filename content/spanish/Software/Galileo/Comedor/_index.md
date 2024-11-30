@@ -10,4 +10,4 @@ titleIcon: "fa-solid fa-utensils"
 Comedor es un modulo de Galileo que permite almacenar, gestionar y mostrar el menú del comedor.
 
 # Generador de archivos ".gal_menu"
-{{< jsoneditor source="Software/Galileo/Comedor/menuSchema.json" >}}
+{{< jsoneditor source="/software/galileo/comedor/menuSchema.json" >}}
