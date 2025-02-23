@@ -2,10 +2,10 @@
 # Standard configuration
 #
 baseURL                = "https://tech.eus/"
-copyright              = "Copyright © 2024 EuskadiTech™"
+copyright              = "Copyright © 2025 EuskadiTech™"
 defaultContentLanguage = "es"
 enableEmoji            = false
-enableGitInfo          = true
+enableGitInfo          = false
 metaDataFormat         = "yaml"
 publishDir             = "public"
 title                  = "EuskadiTech™"
@@ -60,11 +60,18 @@ theme                  = "shadocs"
     weight       = 1
     languageName = "Español"
 
+  [Languages.eu]
+    contentDir   = "content/euskara"
+    title        = "EuskadiTech™"
+    weight       = 2
+    languageName = "Euskara"
+
   [Languages.en]
     contentDir   = "content/english"
     title        = "EuskadiTech™"
-    weight       = 2
+    weight       = 3
     languageName = "English"
+  
 
 
 #
@@ -83,17 +90,17 @@ theme                  = "shadocs"
   currentVersion          = "latest"
   latestVersionUrl        = "https://tech.eus/"
   # enforceRefrelLinks      = true
-  # navbarPrintEntry        = false
-  # navbarQRCodeEntry       = false
-  # navbarSchortcutsEntry   = false
-  # navbarInfo              = false
+  navbarPrintEntry        = false
+  navbarQRCodeEntry       = false
+  navbarSchortcutsEntry   = false
+  navbarInfo              = false
   # [params.navbar.shortcuts]
   #   [params.navbar.shortcuts.example]
   #     keys     = ["Shift","1"]
   #     function = "scExample"
-  [[params.navbar.versions]]
-    name = 'latest'
-    url  = 'https://tech.eus/'
+  # [[params.navbar.versions]]
+  #   name = 'latest'
+  #   url  = 'https://tech.eus/'
   [params.taxonomies]
     [params.taxonomies.categories]
       icon = "fa-solid fa-table-cells"

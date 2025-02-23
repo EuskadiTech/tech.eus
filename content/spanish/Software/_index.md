@@ -1,6 +1,6 @@
 ---
 weight: 0
-title: "Software"
+title: "Nuestro Software"
 titleIcon: "fa-solid fa-hammer"
 # description: "EuskadiTech™"
 # categories: ["Theme"]
