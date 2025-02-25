@@ -6,6 +6,8 @@ titleIcon: "fa-solid fa-user"
 # categories: ["Theme"]
 ---
 
+*Note: This page is not translated, please use the Spanish version.*
+
 ## Module List:
 
 - Create an intro page

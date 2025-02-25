@@ -6,6 +6,8 @@ titleIcon: "fa-solid fa-user"
 # categories: ["Theme"]
 ---
 
+*Oharra: Orri hau ez dago itzulita, mesedez, erabili gaztelaniazko bertsioa.*
+
 ## Moduluen zerrenda:
 
 - Sarrera-orri bat sortzea
