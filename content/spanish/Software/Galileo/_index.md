@@ -8,6 +8,7 @@ titleIcon: "fa-solid fa-school"
 
 # ¿Que es Galileo?
 Galileo es nuestro programa todo-en-uno.
+[Descargar la versión mas reciente](https://github.com/EuskadiTech/Galileo/releases/latest/download/G-Serv.exe)
 
 # Modulos disponibles
 - [Personas](Personas/_index.md) - Gestión de personas, sus permisos y detalles
